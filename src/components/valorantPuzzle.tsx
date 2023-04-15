@@ -2,19 +2,19 @@ import Crossword, {ThemeProvider} from "@jaredreisinger/react-crossword";
 import React from "react";
 
 export const ValorantPuzzle = (prop: {onCorrect: ()=>void})=> {
-//     Don't get in my way! - Viper's Pit
-//     Where is everyone hiding? - Neural Theft
-//     He's surely been in London - Phoenix
-//     She neatly fits in your ... - Sage
-//     You should run! - Lockdown
-//     Baguett consumer - Chamber
-//     Useless but hot - Harbor
-//     Coming back next patch - Bind
-//     PENTAKILL!! - Ace
-//     2900, 1 tap - Vandal
-//     Gateway to numbered rank ladder - Immortal
-//     They have uniquely circled crosshairs - Shotguns
-//     ... to another site - Rotate
+    // .Don't get in my way! - Viper's Pit
+    // Where is everyone hiding? - Neural Theft
+    // He's surely been in London - Phoenix
+    // She neatly fits in your ... - Sage
+    // You should run! - Lockdown
+    // Baguett consumer - Chamber
+    // Useless but hot - Harbor
+    // Coming back next patch - Bind
+    // PENTAKILL!! - Ace
+    // 2900, 1 tap - Vandal
+    // Gateway to numbered rank ladder - Immortal
+    // They have uniquely circled crosshairs - Shotguns
+    // ... to another site - Rotate
     const data = {
             across: {
                 3: {

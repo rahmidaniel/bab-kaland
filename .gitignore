@@ -23,3 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
+/dist/
+/dist/assets/
+/dist/assets/index-8fe4b838.js
+/dist/assets/index-c0d896f9.css
+/dist/03-03-17.png
+/dist/index.html
+/dist/vite.svg

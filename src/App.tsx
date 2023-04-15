@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react'
+import {StardewPuzzle} from "./components/stardewPuzzle";
+import {ValorantPuzzle} from "./components/valorantPuzzle";
+import {CryptogramPuzzle} from "./components/cryptogramPuzzle";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [puzzle, setPuzzle] = useState(0)
+    
+    const handleNext = () => {
+        setPuzzle((prevState)=> prevState + 1);
+    }
+    
+    const holder = [
+        <ValorantPuzzle onCorrect={handleNext}/>,
+        <StardewPuzzle onCorrect={handleNext}/>,
+        <CryptogramPuzzle/>
+    ];
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    return (
+        <div className="flex flex-col justify-center">
+            <h1 className="rounded-2xl shadow-2xl border-2 border-accent text-8xl mb-16 mx-auto p-6">Birthday puzzle extravaganza</h1>
+            <div className="">
+               {holder[puzzle]}
+            </div>
+        </div>
+      )
 }
 
 export default App

@@ -49,7 +49,7 @@ export const StardewPuzzle = (prop: {onCorrect: ()=>void}) => {
                     wheel={{disabled: true}}
                 >
                     <TransformComponent>
-                        <img className="farmImage" src="/03-03-17.png" alt="Farm" />
+                        <img className="farmImage" src="bab-kaland/dist/03-03-17.png" alt="Farm" />
                     </TransformComponent>
                 </TransformWrapper>
             </div>
